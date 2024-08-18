@@ -1,0 +1,45 @@
+/* src/components/AccountForm.css */
+
+.account-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-form h2 {
+    text-align: center;
+  }
+  
+  .account-form input {
+    display: block;
+    width: calc(100% - 22px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .account-form button {
+    display: block;
+    width: 48%;
+    margin: 10px 1%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .account-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .account-form p {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+  }
+  

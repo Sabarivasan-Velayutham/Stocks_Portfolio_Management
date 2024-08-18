@@ -1,0 +1,132 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f7fa;
+  margin: 0;
+  padding: 0;
+  animation: fadeInBackground 1s ease-in-out; /* Background fade-in */
+}
+
+@keyframes fadeInBackground {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.manage-transactions {
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease-in-out; /* Slide-up animation */
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.manage-transactions h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1b9bd7; 
+  text-align: center;
+  font-weight: bold;
+  animation: bounceIn 1s ease-in-out; /* Bounce-in effect for heading */
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.manage-transactions label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555555;
+  animation: fadeIn 1s ease-in-out; /* Fade-in effect for labels */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.manage-transactions input[type="text"],
+.manage-transactions input[type="number"],
+.manage-transactions select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd3d8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.manage-transactions input[type="text"]:focus,
+.manage-transactions input[type="number"]:focus,
+.manage-transactions select:focus {
+  border-color: #1b9bd7; 
+  outline: none;
+  box-shadow: 0 0 8px rgba(27, 155, 215, 0.2); /* Shadow effect on focus */
+}
+
+.manage-transactions button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1b9bd7; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 1s ease-in-out; /* Fade-in up for button */
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.manage-transactions button:hover {
+  background-color: #135f8e;
+  transform: translateY(-2px); /* Elevation effect on hover */
+}
+
+.manage-transactions button:active {
+  background-color: #0e486a;
+}
+
+.manage-transactions form {
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-transactions input[type="number"]::-webkit-outer-spin-button,
+.manage-transactions input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.manage-transactions input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.manage-transactions select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="#1b9bd7" d="M2 0L0 2h4L2 0zM2 5l2-2H0l2 2z"/></svg>') no-repeat right 10px center;
+  background-color: white;
+  padding-right: 30px;
+  transition: background-color 0.3s ease; /* Smooth transition for select */
+}
+
+.manage-transactions select:hover {
+  background-color: #f0f7fa; /* Background change on hover */
+}

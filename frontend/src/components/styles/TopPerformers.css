@@ -1,0 +1,35 @@
+/* src/components/TopPerformers.css */
+
+.top-performers {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-performers h2 {
+    text-align: center;
+  }
+  
+  .top-performers .performers {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top-performers .performers > div {
+    width: 30%;
+  }
+  
+  .top-performers ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .top-performers li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  

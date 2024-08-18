@@ -1,0 +1,88 @@
+/* styles/Recommendations.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f7;
+  color: #333;
+}
+
+.recommendations {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations h1 {
+  color: #003a6d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recommendations section {
+  margin-bottom: 30px;
+}
+
+.recommendations h2 {
+  color: #006fb9;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #003a6d;
+  padding-bottom: 5px;
+}
+
+.recommendations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recommendations li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #e3e8ed;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommendations li strong {
+  color: #003a6d;
+}
+
+.recommendations li .change {
+  color: #f57b20;
+  font-weight: bold;
+}
+
+.recommendations li .volume {
+  color: #333;
+  font-style: italic;
+  margin-left: 15px;
+}
+
+.recommendations li:hover {
+  background-color: #d1dde5;
+}
+
+#table-header {
+  font-weight: bold;
+  background-color: #003a6d;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#table-header span {
+  flex: 1;
+  text-align: center;
+}
+
+.recommendations li  {
+  flex: 1;
+  text-align: center;
+}

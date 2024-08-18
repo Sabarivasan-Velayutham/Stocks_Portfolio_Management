@@ -1,0 +1,22 @@
+.home {
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  

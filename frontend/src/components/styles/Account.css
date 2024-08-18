@@ -1,0 +1,45 @@
+.account {
+  padding: 20px;
+  animation: fadeInSlideUp 1s ease-in-out; /* Slide-up with fade-in animation */
+}
+
+@keyframes fadeInSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: fadeIn 1s ease-in-out; /* Fade-in effect for table */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in effect for table cells */
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-10px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+th {
+  background-color: #f4f4f4;
+  animation: pulse 1.5s infinite; /* Subtle pulsing effect on table headers */
+}
+
+@keyframes pulse {
+  0%, 100% { background-color: #f4f4f4; }
+  50% { background-color: #e8e8e8; }
+}

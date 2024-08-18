@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4; 
+  animation: backgroundAnimation 15s infinite; /* Background animation */
+}
+
+@keyframes backgroundAnimation {
+  0% { background-color: #f4f4f4; }
+  50% { background-color: #e0e0e0; }
+  100% { background-color: #f4f4f4; }
+}
+
+nav {
+  background-color: #1A5A99; 
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+}
+
+nav li {
+  margin-right: 1.5rem;
+}
+
+nav li:last-child {
+  margin-right: 0; 
+}
+
+nav a {
+  color: #FFFFFF; 
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  font-weight: bold; 
+  display: block;
+  border-radius: 8px; 
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+nav a:hover {
+  background-color: #FF4B1F; 
+  color: #FFFFFF;
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+nav a.active {
+  background-color: #FF4B1F; 
+  color: #FFFFFF;
+  animation: pulse 1.5s infinite; /* Pulse effect on the active link */
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

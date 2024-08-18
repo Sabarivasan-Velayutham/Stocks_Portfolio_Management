@@ -1,0 +1,104 @@
+.stock-list {
+  padding: 20px;
+  background-color: #f0f0f0; 
+  border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.stock-list h1 {
+  text-align: center;
+  color: #1b9bd7; 
+  margin-bottom: 20px;
+  font-size: 2rem;
+  animation: bounceIn 1s ease-in-out forwards; /* Bounce-in animation */
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.stock-list h3 {
+  text-align: center;
+  color: #d62428;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.search-input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 4%;
+  border: 2px solid #1b9bd7; 
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effect */
+}
+
+.search-input:focus {
+  border-color: #d62428; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(214, 36, 40, 0.5); /* Add shadow on focus */
+}
+
+.stock-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stock-list li {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 15px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stock-list li:hover {
+  background-color: #f2f2f2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.stock-list li h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1b9bd7; 
+  animation: textSlideIn 0.5s ease-in-out forwards; /* Text slide-in animation */
+}
+
+@keyframes textSlideIn {
+  0% { opacity: 0; transform: translateX(-10px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.stock-list li p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.stock-list li .price {
+  color: #d62428; 
+  font-weight: bold;
+  animation: pricePulse 1.5s infinite; /* Pulse effect on the price */
+}
+
+@keyframes pricePulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

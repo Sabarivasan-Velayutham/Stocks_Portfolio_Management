@@ -1,0 +1,71 @@
+.transaction-history {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInSlideUp 1s ease-in-out; /* Slide-up with fade-in animation */
+}
+
+@keyframes fadeInSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.transaction-history h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1b9bd7; 
+  font-weight: bold;
+  animation: bounceIn 1s ease-in-out; /* Bounce-in effect for heading */
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.transaction-history table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: fadeIn 1s ease-in-out; /* Fade-in effect for table */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.transaction-history th, .transaction-history td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #cbd3d8;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in effect for table cells */
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-10px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.transaction-history th {
+  background-color: #f2f7fa; 
+  color: #333333; 
+  font-weight: bold;
+}
+
+.transaction-history tr:hover {
+  background-color: #e1f2f9; 
+  transition: background-color 0.3s ease; /* Smooth transition on row hover */
+}
+
+.transaction-history td {
+  color: #555555;
+}
+
+.transaction-history th, .transaction-history td {
+  border-bottom: 1px solid #e0e0e0; 
+}

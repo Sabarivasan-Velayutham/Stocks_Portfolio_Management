@@ -1,0 +1,15 @@
+.stock-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .stock-details h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .stock-details p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
