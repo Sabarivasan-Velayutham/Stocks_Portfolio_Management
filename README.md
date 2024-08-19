@@ -8,7 +8,6 @@ This project is a web-based Portfolio Management Application built using React a
 - **Stock List**: Browse and search for stocks in your portfolio.
 - **Transaction Management**: Add, view, and manage transactions.
 - **Account Overview**: View account details and history.
-- **Responsive Design**: The application is responsive and works well on different screen sizes.
 - **Slide Animations**: Smooth slide animations for a better user experience.
 
 
